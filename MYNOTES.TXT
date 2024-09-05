@@ -1,0 +1,52 @@
+* react-laravel-full-stack_db @db
+* php artisan migrate
+
+* npm create vite
+* navigate to the react folder by cd react
+* npm install then npm run dev
+* change the port @ react/package.json under scripts->dev section *--port=3000 then run npm run dev
+* install the navigation via npm install react-router-dom -S
+* -S is shorthand for --save ***
+
+* create a router.jsx file @ react/src dir. 
+
+* React Outlet is a component provided by React Router that serves as a placeholder for child routes within a parent route. 
+It allows for the nesting of routes, enabling developers to create complex navigation structures in their applications.
+
+* createContext is a method provided by React's Context API that facilitates a way to pass data through the component tree without having to pass props down manually at every level. 
+It's especially useful for passing down state, functions, or other data to deeply nested child components without prop drilling.
+
+* the ContextProvider should be imported @ main.jsx
+
+* npm install -S axios
+* create a file named axios-client.js
+
+* create a file named .env.example and .env @ root react dir for url address configuration that will be use in axios-client.js
+* search for react js .env for more info
+
+* create a controller @ api dir
+* php artisan make:controller Api/AuthController
+* php artisan make:request LoginRequest
+* php artisan make:request SignupRequest
+
+* install api route in laravel 11
+* php artisan install:api
+
+* we need to import the class -- use Laravel\Sanctum\HasApiTokens; @ user.php model
+* then add -- use HasApiTokens in the class like this use HasApiTokens, HasFactory, Notifiable;
+* check user.php model for more info
+
+* make a controller for model user.php with request and resource
+* php artisan make:controller Api/UserController --model=User --requests --resource --api
+* php artisan make:resource UserResource
+
+* uncomment the User::factory(20)->create();@ databaseseeder.php then php artisan db:seed
+
+2.55
+
+==========================
+git
+==========================
+git init
+git add .
+git commit -m "commit first"
